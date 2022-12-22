@@ -1,0 +1,328 @@
+.thumbnail-image {
+  width: 100%;
+}
+.channel-picture {
+  width: 100%;
+  border-radius: 40px;
+  vertical-align: top;
+  margin-top: -2px;
+}
+.video-stats {
+  font-family: roboto, arial;
+}
+.video-title {
+  margin-top: -2px;
+  margin-bottom: 10px;
+  margin-left: -2px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.thumbnail {
+  margin-bottom: 10px;
+  position: relative;
+}
+.time-counter {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  bottom: 11px;
+  right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
+.channel-pic {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.author {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin-left: -2px;
+}
+.author-link {
+  text-decoration: none;
+  color: black;
+}
+.video-views {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin-top: 0;
+  margin-left: -2px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 30px;
+}
+.youtube-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgb(219, 218, 218);
+  z-index: 100;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 103px;
+  margin-right: 40px;
+  max-width: 475px;
+}
+.right-section {
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+.hamburger-icon {
+  height: 24px;
+  margin-left: 24px;
+}
+.youtube-icon {
+  height: 20px;
+  margin-left: 24px;
+}
+.voice-img {
+  height: 25px;
+}
+.search-img {
+  height: 25px;
+}
+.youtube-searchbar::placeholder {
+  font-size: 16px;
+  font-family: Roboto;
+}
+.youtube-searchbar {
+  flex: 1;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid rgb(209, 198, 198);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.04);
+  width: 0;
+  max-width: 350px;
+}
+.search-button {
+  background-color: rgb(247, 244, 244);
+  border: 1px solid ;
+  height: 40px;
+  width: 64px;
+  border: 1px solid rgb(209, 198, 198);
+  margin-left: -1px;
+  cursor: pointer;
+}
+.search-button, .voice-button , .upload-tooltip,
+.apps-tooltip, .notification-tooltip ,.notification-icon-counter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip {
+  position: absolute;
+  background-color: rgba(104, 104, 104, 0.9);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: Roboto,arial;
+  font-size: 12px;
+  bottom: -50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip ,
+.upload-tooltip:hover .tooltip,
+.apps-tooltip:hover .tooltip,
+.notification-icon-counter:hover .tooltip {
+  opacity: 1;
+}
+.voice-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 8px;
+  border: none;
+  background-color: rgb(248, 246, 246);
+  cursor: pointer;
+  position: relative;
+}
+.current-user-img {
+  height: 32px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.upload-img, .notifications-img, .youtube-apps-img {
+  height: 24px;
+  cursor: pointer;
+}
+@media (max-width:1200px){
+  .youtube-sidebar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 72px;
+    padding-top: 5px;
+  }
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+@media (min-width:1200px){
+  .main-content{
+    padding-left: 200px;
+  }
+  .youtube-sidebar{
+    width: 250px;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding-top: 5px;
+  }
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    padding-left: 60px;
+  }
+  .text-navigation {
+    margin-left: 26px;
+    margin-top: -5px;
+  }
+  .text-navigation p {
+    font-size: 14px;
+  }
+}
+.notification-icon-counter {
+  position: relative;
+}
+.notification-counter {
+  position: absolute;
+  background-color: #cc0000;
+  color: white;
+  top: -2px;
+  right: -4px;
+  padding: 1px 5px;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(233, 231, 231);
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 6px;
+}
+.sidebar-link div {
+  font-family: Roboto,arial;
+  font-size: 10px;
+}
+.profile-information {
+  background-color: white;
+  position: absolute;
+  height: 75px;
+  width: 230px;
+  box-shadow: 2px 2px 9px rgba(0, 0,0, 0.3);
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  bottom: -80px;
+}
+.popup-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  pointer-events: none;
+}
+.popup-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: 14px;
+}
+.popup-info {
+  font-family: Roboto,arial;
+  line-height: 8px;
+  margin-left: 10px;
+}
+.popup-author {
+  font-size: 16px;
+  font-weight: bold;
+}
+.popup-subscribers {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(96, 96, 96);
+}
+.channel-pic:hover .profile-information {
+  opacity: 1;
+}
+@media (min-width:1200px) {
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width:1000px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width:800px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
